@@ -1,2 +1,5 @@
+install:
+	./run.sh ./npm.sh install
+
 run:
-	./run.sh bun index.js
+	./run.sh ./npm.sh run start

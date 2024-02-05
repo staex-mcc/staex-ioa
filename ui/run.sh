@@ -7,4 +7,4 @@ exec docker run --rm \
   -v "${PWD}":/staex-ioa \
   --entrypoint="" \
   --workdir /staex-ioa \
-  oven/bun "$@"
+  node:20 "$@"
