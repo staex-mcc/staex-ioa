@@ -1,0 +1,9 @@
+[package]
+name = "peaq-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+peaq-gen = { path = "../peaq-gen" }
+subxt = { workspace = true }
+subxt-signer = { workspace = true }

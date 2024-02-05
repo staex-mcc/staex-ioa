@@ -4,15 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-subxt = { version = "0.33.0", features = ["substrate-compat"], default-features = true }
-subxt-signer = { version = "0.33.0", features = [], default-features = true }
-tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"], default-features = false }
-scale = { package = "parity-scale-codec", version = "3.6.9", features = ["derive"], default-features = false }
-toml = { version = "0.8.8", features = ["parse", "display"], default-features = false }
-serde = { version = "1.0.195", features = [], default-features = false }
-clap = { version = "4.4.13", features = ["std", "derive", "help"], default-features = false }
-contract-transcode = { version = "3.2.0", features = [], default-features = false }
-pallet-contracts-primitives = { version = "29.0.0", features = [], default-features = false }
-bip39 = { version = "2.0.0", features = [], default-features = false }
-log = { version = "0.4.20", features = [], default-features = false }
-env_logger = { version = "0.10.1", features = ["auto-color", "humantime"], default-features = false }
+peaq-client = { path = "../peaq-client" }
+peaq-gen = { path = "../peaq-gen" }
+subxt = { workspace = true }
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"], default-features = false }
+serde = { version = "1.0.196", features = [], default-features = false }
+serde_json = { version = "1.0.113", features = [], default-features = false }

@@ -12295,11 +12295,7 @@ pub mod api {
             # [codec (crate = :: subxt :: ext :: codec)]
             #[decode_as_type(crate_path = ":: subxt :: ext :: scale_decode")]
             #[encode_as_type(crate_path = ":: subxt :: ext :: scale_encode")]
-            pub struct Notified(
-                pub notified::Field0,
-                pub notified::Field1,
-                pub notified::Field2,
-            );
+            pub struct Notified(pub notified::Field0, pub notified::Field1, pub notified::Field2);
             pub mod notified {
                 use super::runtime_types;
                 pub type Field0 = ::core::primitive::u64;
@@ -13059,10 +13055,8 @@ pub mod api {
                 }
                 pub mod overweight {
                     use super::runtime_types;
-                    pub type Overweight = (
-                        ::core::primitive::u32,
-                        ::std::vec::Vec<::core::primitive::u8>,
-                    );
+                    pub type Overweight =
+                        (::core::primitive::u32, ::std::vec::Vec<::core::primitive::u8>);
                     pub type Param0 = ::core::primitive::u64;
                 }
                 pub mod counter_for_overweight {
@@ -25691,11 +25685,7 @@ pub mod api {
                     #[codec(index = 3)]
                     ResponseReady(::core::primitive::u64, runtime_types::xcm::v3::Response),
                     #[codec(index = 4)]
-                    Notified(
-                        ::core::primitive::u64,
-                        ::core::primitive::u8,
-                        ::core::primitive::u8,
-                    ),
+                    Notified(::core::primitive::u64, ::core::primitive::u8, ::core::primitive::u8),
                     #[codec(index = 5)]
                     NotifyOverweight(
                         ::core::primitive::u64,
@@ -26948,10 +26938,7 @@ pub mod api {
                         ::std::vec::Vec<::core::primitive::u8>,
                     ),
                     #[codec(index = 2)]
-                    RoleRemoved(
-                        ::subxt::utils::AccountId32,
-                        [::core::primitive::u8; 32usize],
-                    ),
+                    RoleRemoved(::subxt::utils::AccountId32, [::core::primitive::u8; 32usize]),
                     #[codec(index = 3)]
                     RoleFetched(
                         runtime_types::peaq_pallet_rbac::structs::Entity<
@@ -27108,10 +27095,7 @@ pub mod api {
                         ::std::vec::Vec<::core::primitive::u8>,
                     ),
                     #[codec(index = 26)]
-                    GroupDisabled(
-                        ::subxt::utils::AccountId32,
-                        [::core::primitive::u8; 32usize],
-                    ),
+                    GroupDisabled(::subxt::utils::AccountId32, [::core::primitive::u8; 32usize]),
                     #[codec(index = 27)]
                     UserAssignedToGroup(
                         ::subxt::utils::AccountId32,
